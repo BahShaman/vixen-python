@@ -37,9 +37,10 @@ mfont = pygame.font.SysFont('freesansbold', 25)
 periods = len(data)/num
 print "%s channels, %s periods" % (str(num),str(periods))
 
-seq = [ data[start:start+periods] for start in range(0, len(data), periods) ]
+seq = [ data[start:start+periods] for start in range(0, len(data), ) ]
 pygame.mixer.music.play(0)
-print [ord(x) for x in seq[0][0]]
+print [ord(x) for x in seq[0]]
+done = True
 loop_tick_init = pygame.time.get_ticks()
 loop_ticks = loop_tick_init
 while not done:
@@ -61,8 +62,18 @@ while not done:
 		break
 
 	# --- Game logic should go here
+	val = [ord(x) for x in seq[count]]
 	count += 1
-	per = count
+	print 	'%03d' % val[0], \
+			'%03d' % val[1], \
+			'%03d' % val[2], \
+			'%03d' % val[3], \
+			'%03d' % val[4], \
+			'%03d' % val[5], \
+			'count: %s' % str(count), \
+			'ticks: %s' % str(count * millis), \
+			'pos: %d' % pygame.mixer.music.get_pos(), \
+			'diff: %s' % str(pygame.mixer.music.get_pos() - (count * millis))
 
 	# --- Drawing code should go here
  
@@ -72,27 +83,21 @@ while not done:
 	label = mfont.render("Offset: "+str(offset), True, (100,100,100))
 	screen.blit(label, (100, 100))
 
-	for ch in seq:
-		value = ord(ch[per])
-		print '{:0>3d}'.format(ord(ch[per])),
+	for i in range(num):
 		box_on = False
-		if value > 1:
+		if val[i] > 1:
 			box_on = True
-		lef = box_off + *(box_gap + box_width)
+		lef = box_off + i*(box_gap + box_width)
 		top = box_off
 		wid = box_width
 		hgt = box_width
 		#print "[%d,%d,%d,%d] " % (lef,top,wid,hgt)
-		r = value
-		g = value*(255/255.0)
+		r = val[i]
+		g = val[i]*(255/255.0)
 		b = 0
-		print "color: (%d,%d,%d)" % (r,g,b),
+		print "color: (%d,%d,%d)" % (r,g,b)
 		if box_on == True:
 			pygame.draw.rect(screen, (r, g, b), [lef,top,wid,hgt], 0)
-	print 'count: %s' % str(count), \
-			'ticks: %s' % str(count * millis), \
-			'pos: %d' % pygame.mixer.music.get_pos(), \
-			'diff: %s' % str(pygame.mixer.music.get_pos() - (count * millis))
 		
 
 	print "---"
