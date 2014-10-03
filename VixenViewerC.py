@@ -16,23 +16,24 @@ COLOR = GREEN
 
 vix = Vixen()
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino6ChannelThisIsHolloweenMain.vix"
-vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\PythonDecodeSample2.vix'
-vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\Arduino6ChannelTechNewsToday.vix'
+#vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\PythonDecodeSample2.vix'
+#vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\Arduino6ChannelTechNewsToday.vix'
 #vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\Arduino8ChannelPatternsSample.vix'
 #vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\Arduino8ChannelChristmasLinusAndLucy.vix'
 
-#musfile = 'C:/Users/BOSCIA/Documents/Projects/VixenDecode/03 - This Is Halloween.ogg'
+musfile = 'C:/Users/BOSCIA/Documents/Projects/VixenDecode/03 - This Is Halloween.ogg'
 #musfile = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Audio\tnt0858.mp3'
-vixfilename = "./VixenFiles/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
+#vixfilename = "./VixenFiles/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
 #vixfilename = "./VixenFiles/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
 #musfile = '03 - This Is Halloween.ogg'
 
-vixfilename = "./VixenFiles/Sequences/Arduino8ChannelChristmasLinusAndLucy.vix"
-musfile = './VixenFiles/Audio/04-A Charlie Brown Christmas-Linus and Lucy.mp3'
+#vixfilename = "./VixenFiles/Sequences/Arduino8ChannelChristmasLinusAndLucy.vix"
+#musfile = './VixenFiles/Audio/04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 
 
-vix.channels = 8
 vix.loadfile(vixfilename)
+vix.channels = 6
+vix.processdata(vix.event_values,6)
 #musfile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\" + vix.musicfilename
 vix.loadmusic(musfile)
 channels = vix.channels
