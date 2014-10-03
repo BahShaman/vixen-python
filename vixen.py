@@ -29,6 +29,9 @@ class Vixen(object):
 		self.screen = pygame.display.set_mode(size)
 		return self.screen
 	
+	def loadfilefromdir(self,dirname,vixfilename):
+		pass
+	
 	def loadfile(self,vixfilename):
 		"""---"""				
 		if not os.path.exists(vixfilename):
@@ -102,6 +105,8 @@ class Vixen(object):
 			print 'file %s not found' % musicfilename
 		
 	def play(self):
+		self.ticks_init = pygame.time.get_ticks()
+
 		if self.musicfilename != '':
 			pygame.mixer.music.play(0)
 		else:
@@ -109,15 +114,18 @@ class Vixen(object):
 			self.ticks_init = pygame.time.get_ticks()
 	
 	def get_pos(self):
-		if self.musicfilename != '':
+		if pygame.mixer.music.get_pos() != -1: #self.musicfilename != '':
+			#print "music_pos",
 			return pygame.mixer.music.get_pos()
 		else:
+			#print "get_ticks"
 			return pygame.time.get_ticks() - self.ticks_init
 	
 	def pos_syncwait(self,period,offset=0):
-		while self.get_pos() < self.ticks_at_per(int(period)) + offset:
+		x=0
+		while self.get_pos() > 1 and self.get_pos() < self.ticks_at_per(int(period)) + offset:
 			pass
-	
+			
 	def channel(self):
 		pass
 	
