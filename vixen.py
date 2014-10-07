@@ -6,6 +6,9 @@ import xml.etree.ElementTree as ET
 class Vixen(object):
 	screen = None
 	data = ''
+	has_musicfile = False
+	has_vixfile = False
+	has_profilefile = False
 	vixfilename = ''
 	musicfilename = ''
 	channels = 1
@@ -30,12 +33,16 @@ class Vixen(object):
 		return self.screen
 	
 	def loadfilefromdir(self,dirname,vixfilename):
+		"""load vixen file and set its base directories"""
 		pass
 	
-	def loadfile(self,vixfilename):
+	def loadfile(self,filename):
+		self.loadvixfile(filename)
+	
+	def loadvixfile(self,vixfilename):
 		"""---"""				
 		if not os.path.exists(vixfilename):
-			print "File %s cannot be found" % vixfilename
+			raise "File %s cannot be found" % vixfilename
 		else:
 			print "File %s found" % vixfilename
 			tree = ET.parse(vixfilename)
@@ -66,35 +73,41 @@ class Vixen(object):
 					print PlugInData.find('Stop').text
 			#if root.find('Profile') is not None:
 			#	print root.find('Profile').text
-				#profilefile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\profiles\\" + root.find('Profile').text + ".pro"
-				#print profilefile
-				#if os.path.exists(profilefile):
-				#	tree = ET.parse(profilefile)
-				#	root = tree.getroot()
-				#	print root.tag
-				#	channel_objects = int(len(root.find('ChannelObjects')))
-				#	print channel_objects
-				#	if self.channels == 0 and channel_objects > 0:
-				#		self.channels = len(root.find('ChannelObjects'))
-				#		print "setting channels from profile"
-				#	if root.find('PlugInData') is not None:
-				#		PlugInData = root.find('PlugInData')[0]
-				#		#print PlugInData.get('name')
-				#		#print PlugInData.get('enabled')
-				#		#print PlugInData.get('from')
-				#		#print PlugInData.get('to')
-				#		if PlugInData.get('name') == 'Generic serial':
-				#			pass
-				#			#print PlugInData.find('Name').text
-				#			#print PlugInData.find('Baud').text
-				#			#print PlugInData.find('Parity').text
-				#			#print PlugInData.find('Data').text
-				#			#print PlugInData.find('Stop').text	
+				
 			"""---"""	
 			#self.processdata(self.event_values)
-		
+	def loadvixprofile(self,vixprofilename):
+		profilefile = readfile(vixprofilename)
+		if not profilefile:
+			raise "Vixen profile file '%s' not found" % vixprofilename
+		#profilefile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\profiles\\" + root.find('Profile').text + ".pro"
+		print profilefile
+		if os.path.exists(profilefile):
+			tree = ET.parse(profilefile)
+			root = tree.getroot()
+			print root.tag
+			channel_objects = int(len(root.find('ChannelObjects')))
+			print channel_objects
+			if self.channels == 0 and channel_objects > 0:
+				self.channels = len(root.find('ChannelObjects'))
+				print "setting channels from profile"
+			if root.find('PlugInData') is not None:
+				PlugInData = root.find('PlugInData')[0]
+				#print PlugInData.get('name')
+				#print PlugInData.get('enabled')
+				#print PlugInData.get('from')
+				#print PlugInData.get('to')
+				if PlugInData.get('name') == 'Generic serial':
+					pass
+					#print PlugInData.find('Name').text
+					#print PlugInData.find('Baud').text
+					#print PlugInData.find('Parity').text
+					#print PlugInData.find('Data').text
+					#print PlugInData.find('Stop').text	
+	
 	def loadmusic(self,musicfilename):
 		if os.path.exists(musicfilename):
+			self.has_musicfile = True
 			self.musicfilename = musicfilename		
 			#print 'music loaded'
 			print 'loading from loadmusic %s' % self.musicfilename
@@ -107,14 +120,14 @@ class Vixen(object):
 	def play(self):
 		self.ticks_init = pygame.time.get_ticks()
 
-		if self.musicfilename != '':
+		if self.has_musicfile:
 			pygame.mixer.music.play(0)
 		else:
 			print "music file not found, using ticks"
 			self.ticks_init = pygame.time.get_ticks()
 	
 	def get_pos(self):
-		if pygame.mixer.music.get_pos() != -1: #self.musicfilename != '':
+		if self.has_musicfile == True and pygame.mixer.music.get_pos() != -1: #self.musicfilename != '':
 			#print "music_pos",
 			return pygame.mixer.music.get_pos()
 		else:
@@ -134,6 +147,11 @@ class Vixen(object):
 	
 	def value(self,channel,period):
 		return ord(self.sequence[channel][period])
+		
+	def set_value(self,channel,period,val):
+		print self.sequence[channel][period] == chr(val),
+		print "setting", str(self.sequence[channel][period]), " to ", str(chr(val))
+		#self.sequence[channel][period] = self.sequence[channel][period]
 	
 	def period_str(self,period):
 	
@@ -150,7 +168,8 @@ class Vixen(object):
 		self.periods = len(self.data)/self.channels
 		print "%s channels, %s periods" % (str(self.channels),str(self.periods))
 		self.sequence = [ self.data[start:start+self.periods] for start in range(0, len(self.data), self.periods) ]
-
+		print str(self.sequence[0][0])
+		print "hello:" + str(hex(ord(self.sequence[0][0])))		
 		
 """****************************************   TESTING   ****************************************"""
 if __name__ == "__main__":		
