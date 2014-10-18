@@ -74,7 +74,7 @@ if True:
 	print "starting"
 	while True:
 		for x in range(8):
-			time.sleep(2)
+			#time.sleep(2)
 			sendbytes = []
 			for i in range(8):
 				if x == i:
@@ -83,11 +83,14 @@ if True:
 				else:
 					my_int = 0
 				sendbytes.append(bytes(chr(my_int)),)
-				sendbytes.append("!")
+				#sendbytes.append("!")
 				print " {:3d}".format(my_int) ,
 				#print len(bytes(chr(my_int)),) ,
 			wport.write(sendbytes)
 			print len(sendbytes)
+			#print "[" ,
+			#print sendbytes ,
+			#print "]" ,
 			z = raw_input("pausing")
 	while True:
 		print wport.read(1),
