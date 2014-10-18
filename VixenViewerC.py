@@ -3,6 +3,7 @@ import pygame
 import os
 import time
 from vixen import Vixen
+from ArduinoSerial import ArduinoSerial
 
 BLACK    = (   0,   0,   0)
 WHITE    = ( 255, 255, 255)
@@ -14,6 +15,7 @@ BLUE     = ( 0,   0,   255)
 
 COLOR = GREEN
 
+ard = ArduinoSerial()
 vix = Vixen()
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino6ChannelThisIsHolloweenMain.vix"
 #vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\PythonDecodeSample2.vix'
@@ -96,11 +98,13 @@ while not done:
 	vix.screen.fill(BLACK)
 	label = mfont.render(vix.title + " [" +  vix.period_str(per) + "]"  , True, [x*.5 for x in COLOR])
 	vix.screen.blit(label, (box_off, box_off+box_width+box_gap/2))
-
+	values = []
+	
 	for ch in range(vix.channels):
 		#print ch
 		#value = ord(seq[ch][per])
 		value = vix.value(ch,per)
+		values.append(value)
 		print '{:3d}'.format(value),
 		box_on = False
 		if value > 1:
@@ -135,6 +139,7 @@ while not done:
 	
  
 	# --- Go ahead and update the screen with what we've drawn.
+	ard.send(values)
 	pygame.display.flip()
 	per += 1
  
