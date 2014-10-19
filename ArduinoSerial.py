@@ -17,10 +17,12 @@ class ArduinoSerial(object):
 
 	def port(self,wport="Auto"):
 		try:
-			self.wport = serial.Serial('COM4', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+			#self.wport = serial.Serial('COM4', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+			self.wport = serial.Serial('/dev/ttyUSB0', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
 		except serial.SerialException:
 			self.wport = None
-
+		except:
+			self.wport = None
 		
 	def sendbytes(self,bytearray):
 		if self.wport:
@@ -56,7 +58,3 @@ if __name__ == "__main__":
 			Ard.send(data)
 			print len(data)
 
-	
-	
-	
-	

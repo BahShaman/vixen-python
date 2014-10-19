@@ -32,6 +32,14 @@ musfile = 'C:/Users/BOSCIA/Documents/Projects/VixenDecode/03 - This Is Halloween
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
 musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 
+vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
+musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
+vixfilename = "./VixenFiles/Sequences/Arduino8ChannelChristmasLinusAndLucy.vix"
+musfile = './VixenFiles/Audio/04-A Charlie Brown Christmas-Linus and Lucy.mp3'
+musfile = "./VixenFiles/Audio/07-The Legend of Zelda 25th Anniversary-AudioTrack 07.mp3"
+vixfilename = './VixenFiles/Sequences/Arduino8ChannelZeldaMainTheme.vix'
+musfile = "./VixenFiles/Audio/Chiron_Beta_Prime.mp3"
+vixfilename = './VixenFiles/Sequences/Arduino8ChannelChironBetaPrime.vix'
 
 vix.loadfile(vixfilename)
 vix.channels = 8
