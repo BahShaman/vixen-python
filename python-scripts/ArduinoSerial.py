@@ -33,11 +33,13 @@ class ArduinoSerial(object):
 
 	def port(self,port="Auto"):
 		#try:
+		aport = []
 		if port=="Auto":
 			aport = self.autoport()
-			print "Using",
-			print aport
-			self.wport = serial.Serial(aport[0], baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+			if aport:
+				self.wport = serial.Serial(aport[0], baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+				print "Using",
+				print aport
 		else:
 			self.wport = serial.Serial(port, baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
 			#self.wport = serial.Serial('/dev/ttyUSB0', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
@@ -53,7 +55,7 @@ class ArduinoSerial(object):
 		for port in ports:
 			print "\t",
 			print port
-		return ports[0]
+			return port
 			
 	
 	def sendbytes(self,bytearray):
