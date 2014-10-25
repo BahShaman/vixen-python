@@ -9,21 +9,53 @@ class ArduinoSerial(object):
 
 	def __init__(self,wport="Auto"):
 		self.port(wport)
+		
+	def __del__(self):
+		try:
+			self.wport.close()
+		except:
+			pass
 
 	def test(self,length=8):
 		for x in range(length):
-			self.send([255,0,255,0,255,0,255,0])
-			time.sleep(.5)
+			time.sleep(.1)
+			data = []
+			for i in range(length):
+				if x == i:
+				#if x % 1 == i % 1:
+					my_int = 255
+				else:
+					my_int = 0
+				data.append(my_int)
+				print " {:3d}".format(my_int) , 
+			Ard.send(data)
+			print "ArduinoSerial Test, length: %s" % len(data)
 
-	def port(self,wport="Auto"):
-		try:
-			#self.wport = serial.Serial('COM4', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
-			self.wport = serial.Serial('/dev/ttyUSB0', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
-		except serial.SerialException:
-			self.wport = None
-		except:
-			self.wport = None
-		
+	def port(self,port="Auto"):
+		#try:
+		if port=="Auto":
+			aport = self.autoport()
+			print "Using",
+			print aport
+			self.wport = serial.Serial(aport[0], baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+		else:
+			self.wport = serial.Serial(port, baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+			#self.wport = serial.Serial('/dev/ttyUSB0', baudrate=38400, bytesize=serial.EIGHTBITS, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE, timeout=3.0)
+		#except serial.SerialException:
+		#	self.wport = None
+		#except:
+		#	self.wport = None
+	
+	def autoport(self):
+		ports = list(serial.tools.list_ports.comports())
+		print "%d ports found" % len(ports)
+		'''note this only returns the first port'''
+		for port in ports:
+			print "\t",
+			print port
+		return ports[0]
+			
+	
 	def sendbytes(self,bytearray):
 		if self.wport:
 			self.wport.write(bytearray)
@@ -42,8 +74,7 @@ class ArduinoSerial(object):
 if __name__ == "__main__":		
 	Ard = ArduinoSerial("COM4")
 	Ard.test()
-	print Ard.send([255,0,255,0,255,0,255,0])
-	while True:
+	for z in range(1):
 		for x in range(8):
 			time.sleep(.1)
 			data = []
@@ -57,4 +88,35 @@ if __name__ == "__main__":
 				print " {:3d}".format(my_int) ,
 			Ard.send(data)
 			print len(data)
+	Ard.send([0,0,0,0,0,0,0,0])
+	
+	"""testing Auto"""
+	Ard = None	
 
+	print "failing..."
+	try:
+		Ard = ArduinoSerial("Bogus")
+		Ard.test()
+	except:
+		print "PASS"
+	
+	Ard = None	
+	Ard = ArduinoSerial()
+	Ard.test()
+	Ard.send([255,0,255,0,255,0,255,0])
+	for z in range(4):
+		for x in range(8):
+			time.sleep(.1)
+			data = []
+			for i in range(8):
+				#if x == i:
+				if x % 3 == i % 3:
+					my_int = 255
+				else:
+					my_int = 0
+				data.append(my_int)
+				print " {:3d}".format(my_int) ,
+			Ard.send(data)
+			print len(data)
+	print Ard.send([0,0,0,0,0,0,0,0])
+	print Ard.send([0,0,0,0,0,0,0,0])
