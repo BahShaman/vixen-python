@@ -26,26 +26,33 @@ vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino6Ch
 musfile = 'C:/Users/BOSCIA/Documents/Projects/VixenDecode/03 - This Is Halloween.ogg'
 #musfile = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Audio\tnt0858.mp3'
 #vixfilename = "./VixenFiles/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
-#vixfilename = "./VixenFiles/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
 #musfile = '03 - This Is Halloween.ogg'
 
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
 musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 
-vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
-musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 vixfilename = "./VixenFiles/Sequences/Arduino8ChannelChristmasLinusAndLucy.vix"
 musfile = './VixenFiles/Audio/04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 musfile = "./VixenFiles/Audio/07-The Legend of Zelda 25th Anniversary-AudioTrack 07.mp3"
 vixfilename = './VixenFiles/Sequences/Arduino8ChannelZeldaMainTheme.vix'
-musfile = "./VixenFiles/Audio/Chiron_Beta_Prime.mp3"
-vixfilename = './VixenFiles/Sequences/Arduino8ChannelChironBetaPrime.vix'
+musfile = "../VixenFiles/Audio/Chiron_Beta_Prime.mp3"
+vixfilename = '../VixenFiles/Sequences/Arduino8ChannelChironBetaPrime.vix'
+vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
+musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
 
+vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino8ChannelChristmasLinusAndLucy.vix"
+musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown Christmas-Linus and Lucy.mp3'
+vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
+#vixfilename = 'Arduino8ChannelChironBetaPrime.vix'
+vixfilename = "Arduino6ChannelThisIsHolloweenMain.vix"
+
+
+vix.basedir('C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\')
 vix.loadfile(vixfilename)
-vix.channels = 8
-vix.processdata(vix.event_values,8)
+#vix.channels = 6
+vix.processdata(vix.event_values,vix.channels)
 #musfile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\" + vix.musicfilename
-vix.loadmusic(musfile)
+#vix.loadmusic(musfile)
 channels = vix.channels
 
 box_width = 100
@@ -106,13 +113,11 @@ while not done:
 	vix.screen.fill(BLACK)
 	label = mfont.render(vix.title + " [" +  vix.period_str(per) + "]"  , True, [x*.5 for x in COLOR])
 	vix.screen.blit(label, (box_off, box_off+box_width+box_gap/2))
-	values = []
 	
 	for ch in range(vix.channels):
 		#print ch
 		#value = ord(seq[ch][per])
 		value = vix.value(ch,per)
-		values.append(value)
 		print '{:3d}'.format(value),
 		box_on = False
 		if value > 1:
@@ -147,7 +152,8 @@ while not done:
 	
  
 	# --- Go ahead and update the screen with what we've drawn.
-	ard.send(values)
+	print vix.period_arr(per),
+	ard.send(vix.period_arr(per))
 	pygame.display.flip()
 	per += 1
  
