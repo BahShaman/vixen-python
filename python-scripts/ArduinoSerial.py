@@ -74,27 +74,53 @@ class ArduinoSerial(object):
 		
 """****************************************   TESTING   ****************************************"""
 if __name__ == "__main__":		
-	Ard = ArduinoSerial("COM4")
-	Ard.test()
-	for z in range(1):
-		for x in range(8):
-			time.sleep(.1)
-			data = []
-			for i in range(8):
-				if x == i:
-				#if x % 1 == i % 1:
-					my_int = 255
-				else:
-					my_int = 0
-				data.append(my_int)
-				print " {:3d}".format(my_int) ,
-			Ard.send(data)
-			print len(data)
-	Ard.send([0,0,0,0,0,0,0,0])
-	
-	"""testing Auto"""
+	try:
+		Ard = ArduinoSerial("COM4")
+		Ard.test()
+		for z in range(1):
+			for x in range(8):
+				time.sleep(.1)
+				data = []
+				for i in range(8):
+					if x == i:
+					#if x % 1 == i % 1:
+						my_int = 255
+					else:
+						my_int = 0
+					data.append(my_int)
+					print " {:3d}".format(my_int) ,
+				Ard.send(data)
+				print len(data)
+		Ard.send([0,0,0,0,0,0,0,0])
+	except:
+		print "FAILED"
 	Ard = None	
 
+	"""testing Auto"""
+
+	try:
+		Ard = ArduinoSerial("COM4")
+		Ard.test()
+		for z in range(1):
+			for x in range(8):
+				time.sleep(.1)
+				data = []
+				for i in range(8):
+					if x == i:
+					#if x % 1 == i % 1:
+						my_int = 255
+					else:
+						my_int = 0
+					data.append(my_int)
+					print " {:3d}".format(my_int) ,
+				Ard.send(data)
+				print len(data)
+		Ard.send([0,0,0,0,0,0,0,0])
+	except:
+		print "FAILED"
+	Ard = None	
+
+	"""testing Bogus"""
 	print "failing..."
 	try:
 		Ard = ArduinoSerial("Bogus")
