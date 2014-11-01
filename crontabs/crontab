@@ -1,0 +1,20 @@
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+
+#
+# run this for output to screen and to run single song (This is Halloween)
+#
+#00,05,10,15,20,25,30,35,40,45,50,55 * * * * /home/pi/Github/vixen-python/python-scripts/runDisp0.sh /home/pi/Github/vixen-python/python-scripts/VixenViewerC.py > /home/pi/vixplaylog 2>/home/pi/vixerrorlog
+
+
+#
+# this one will run the program/list of them with crossfade
+#
+00,05,10,15,20,25,30,35,40,45,50,55 * * * * /home/pi/Github/vixen-python/python-scripts/runDisp0.sh /home/pi/Github/vixen-python/python-scripts/VixenProgram.py > /home/pi/vixplaylog 2>/home/pi/vixerrorlog
+
+
+#00,05,10,15,20,25,30,35,40,45,50,55 * * * * date >> /home/pi/crondate
