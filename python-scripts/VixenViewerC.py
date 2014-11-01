@@ -13,10 +13,12 @@ ORANGE   = ( 255, 153,   0)
 YELLOW   = ( 255, 255,   0)
 BLUE     = ( 0,   0,   255)
 
-COLOR = GREEN
+COLOR = ORANGE
 
 ard = ArduinoSerial()
 vix = Vixen()
+
+'''
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino6ChannelThisIsHolloweenMain.vix"
 #vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\PythonDecodeSample2.vix'
 #vixfilename = 'C:\Users\BOSCIA\Portable\Vixen 2.1.1.0\Sequences\Arduino6ChannelTechNewsToday.vix'
@@ -45,14 +47,16 @@ musfile = 'C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\04-A Charlie Brown
 vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0/Sequences/Arduino6ChannelThisIsHolloweenMain.vix"
 #vixfilename = 'Arduino8ChannelChironBetaPrime.vix'
 vixfilename = "Arduino6ChannelThisIsHolloweenMain.vix"
+#musfile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\" + vix.musicfilename
+#vix.loadmusic(musfile)
+'''
 
-
-vix.basedir('C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\')
+vixfilename = "Arduino6ChannelThisIsHolloweenMain.vix"
+#vix.basedir('C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\')
+vix.basedir('/home/pi/Github/vixen-python/VixenFiles')
 vix.loadfile(vixfilename)
 #vix.channels = 6
 vix.processdata(vix.event_values,vix.channels)
-#musfile = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Audio\\" + vix.musicfilename
-#vix.loadmusic(musfile)
 channels = vix.channels
 
 box_width = 100
@@ -152,7 +156,7 @@ while not done:
 	
  
 	# --- Go ahead and update the screen with what we've drawn.
-	print vix.period_arr(per),
+	#print vix.period_arr(per),
 	ard.send(vix.period_arr(per))
 	pygame.display.flip()
 	per += 1
