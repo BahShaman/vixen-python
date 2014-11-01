@@ -102,10 +102,10 @@ if __name__ == "__main__":
 		Ard = ArduinoSerial("COM4")
 		Ard.test()
 		for z in range(1):
-			for x in range(8):
+			for x in range(6):
 				time.sleep(.1)
 				data = []
-				for i in range(8):
+				for i in range(6):
 					if x == i:
 					#if x % 1 == i % 1:
 						my_int = 255
@@ -133,10 +133,10 @@ if __name__ == "__main__":
 	Ard.test()
 	Ard.send([255,0,255,0,255,0,255,0])
 	for z in range(4):
-		for x in range(8):
+		for x in range(6):
 			time.sleep(.1)
 			data = []
-			for i in range(8):
+			for i in range(6):
 				#if x == i:
 				if x % 3 == i % 3:
 					my_int = 255
