@@ -15,8 +15,8 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="drawing-v2.svg"
-   inkscape:export-filename="C:\Documents and Settings\C00364\My Documents\Projects\ArduinoChristmas2013\drawing-wiring-v2.png"
+   sodipodi:docname="drawing-v3.svg"
+   inkscape:export-filename="C:\/users/boscia/documents\projects\arduinochristmas2013\drawing-wiring-v3.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -527,15 +527,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.9735616"
-     inkscape:cx="377.31041"
-     inkscape:cy="1114.1225"
+     inkscape:zoom="0.21319444"
+     inkscape:cx="270.58632"
+     inkscape:cy="1440"
      inkscape:document-units="in"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer11"
      showgrid="false"
      units="in"
      inkscape:window-width="1536"
-     inkscape:window-height="803"
+     inkscape:window-height="801"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -1608,7 +1608,8 @@
      inkscape:groupmode="layer"
      id="layer15"
      inkscape:label="RaspberryPi"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g4448"
        transform="translate(310.41565,-475.32396)">
@@ -2140,7 +2141,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Hardware"
-     style="display:inline" />
+     style="display:inline"
+     sodipodi:insensitive="true" />
   <g
      inkscape:groupmode="layer"
      id="layer13"
@@ -3725,7 +3727,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Title"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect5345"
