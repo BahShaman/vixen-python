@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Sequence>Arduino6ChannelThisIsHolloweenMain.vix</Sequence>
+  <Sequence>Arduino6ChannelPumpkinGrinningGhosts.vix</Sequence>
+  <Sequence>Arduino6ChannelPumpkinHeffalumps.vix</Sequence>
+  <Profile>BosciaVixenArduino</Profile>
+  <CrossFadeLength>0</CrossFadeLength>
+</Program>

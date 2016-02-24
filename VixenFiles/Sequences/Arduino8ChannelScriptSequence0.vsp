@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Time>0</Time>
+  <EventPeriodInMilliseconds>100</EventPeriodInMilliseconds>
+  <MinimumLevel>0</MinimumLevel>
+  <MaximumLevel>255</MaximumLevel>
+  <AudioDevice>-1</AudioDevice>
+  <AudioVolume>0</AudioVolume>
+  <Channels>
+    <Channel color="-1" output="0" id="635224783602083168" enabled="True">Post_1</Channel>
+    <Channel color="-1" output="1" id="635224783602083168" enabled="True">Tree_1</Channel>
+    <Channel color="-1" output="2" id="635224783602083168" enabled="True">Tree_2</Channel>
+    <Channel color="-1" output="3" id="635224783602083168" enabled="True">Tree_3</Channel>
+    <Channel color="-1" output="4" id="635224783602083168" enabled="True">Tree_4</Channel>
+    <Channel color="-1" output="5" id="635224783602083168" enabled="True">Tree_5</Channel>
+    <Channel color="-1" output="6" id="635224783602083168" enabled="True">Tree_6</Channel>
+    <Channel color="-1" output="7" id="635224783602083168" enabled="True">Post_2</Channel>
+  </Channels>
+  <PlugInData>
+    <PlugIn name="Generic serial" key="34090287" id="0" enabled="True" from="1" to="8">
+      <Name>COM4</Name>
+      <Baud>38400</Baud>
+      <Parity>None</Parity>
+      <Data>8</Data>
+      <Stop>One</Stop>
+      <Header checked="False">
+      </Header>
+      <Footer checked="False">
+      </Footer>
+    </PlugIn>
+  </PlugInData>
+  <SortOrders lastSort="-1" />
+  <EventValues>
+  </EventValues>
+  <LoadableData />
+  <EngineType>Procedural</EngineType>
+  <Extensions>
+    <Extension type=".vsp">
+      <SourceFiles>
+        <SourceFile>ScriptSequence0.cs</SourceFile>
+      </SourceFiles>
+      <SourceDirectory>Arduino8ChannelScriptSequence0</SourceDirectory>
+      <Imports />
+      <ModuleReferences>
+        <ModuleReference>Standard.dll</ModuleReference>
+      </ModuleReferences>
+    </Extension>
+  </Extensions>
+</Program>

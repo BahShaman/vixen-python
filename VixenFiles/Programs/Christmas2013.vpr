@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Sequence>Arduino8ChannelChristmasLinusAndLucy.vix</Sequence>
+  <Sequence>Arduino8ChannelDrummer.vix</Sequence>
+  <Sequence>Arduino8ChannelOhChristmasTree.vix</Sequence>
+  <Sequence>Arduino8ChannelSkating.vix</Sequence>
+  <Sequence>Arduino8ChannelChristmasIsComing.vix</Sequence>
+  <Sequence>Arduino8ChannelZeldaMainTheme.vix</Sequence>
+  <Sequence>Arduino8ChannelChironBetaPrime.vix</Sequence>
+  <Profile>BosciaVixenArduinoChristmas</Profile>
+  <CrossFadeLength>0</CrossFadeLength>
+</Program>

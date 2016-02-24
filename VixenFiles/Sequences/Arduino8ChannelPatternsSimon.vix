@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Time>147147</Time>
+  <EventPeriodInMilliseconds>100</EventPeriodInMilliseconds>
+  <MinimumLevel>0</MinimumLevel>
+  <MaximumLevel>255</MaximumLevel>
+  <AudioDevice>-1</AudioDevice>
+  <AudioVolume>0</AudioVolume>
+  <Channels />
+  <PlugInData>
+    <PlugIn name="Generic serial" key="34090287" id="0" enabled="True" from="1" to="8">
+      <Name>COM4</Name>
+      <Baud>38400</Baud>
+      <Parity>None</Parity>
+      <Data>8</Data>
+      <Stop>One</Stop>
+      <Header checked="False" />
+      <Footer checked="False" />
+    </PlugIn>
+  </PlugInData>
+  <SortOrders lastSort="-1" />
+  <Profile>BosciaVixenArduinoChristmas</Profile>
+  <Audio filename="07-A Charlie Brown Christmas-Skating.mp3" duration="147147">07-A Charlie Brown Christmas-Skating.mp3</Audio>
+  <EventValues>////AP8A/wAAAAAAAAD//wAAAAAA/wAA//8AAAAAAP8AAP8AAP//AP8AAAAA//8A/wAAAAD///8A////AP8A//8A////AP8A/wAAAAD//wD/AP8AAP8AAAD/AP//AP8A/////////wD//wAAAP8AAP8A/wD/AAAAAP8AAP//////AP///wD//wD//wD///8AAAAAAAD/////AP8AAP//AAD/////AP8AAP8AAP8AAP//AP//AAAA/wD/AAAAAP///wAAAP8AAP//AAAAAP//AAD//wAA//8A//////8A//////8A/////wAAAP//AP8A/wAAAP8AAAD/AP8A/wAAAP//AP///wD/////AP///wD/////AP//AAD/AAD/AAD///8A/wAA/wD/AP8AAP//AAD//wD//wAAAP//AP8AAAD/////AAAA//8A/wAA////AAD/AAD///8AAP8A/wD/AAD/AP8A//8A//8AAP//AAAAAP8A////AAAAAP///wAA//8AAP8A//////8A/wAA//8A////AP///wD/AP///wAA//8A/wAAAAD/AAAAAAAA/wD/AP8A/wD/AAAAAAD///8A////AP8AAAD///8A/wD//wAAAP8AAP8A/wAAAAD/AAAAAP//AAD//wAAAP///wAA/wD/AAD//wD/AP//AAAA////AP////////8AAP8A//////8A/wAA//8AAP8AAAAAAP//AAD/AAAAAAAA/wD/AAD/AP8AAAAAAP8A/wAA/wAA/wAA/wD/AP///wAAAAAA/wAA/////wD/AP8A//////8AAP//AAAA/wAAAAAA/wAA/wAAAAAA/wD/AAD/AAD//wAAAAD///8A////AP//AP8AAP////8A/wD/AAAAAAAAAP////8A/wD//////wAAAP//AP//AP8A//8A////AAD///8A/wD//wAAAAD//////wD/AAAA/wAAAAAAAP8AAP8A/wAAAP//////AP8A/wD///8A/////wD//wAA/wAAAAAAAAAA/////wD//wAA//8AAAD/AP//AP///wD/AAD/AAAA////AP///wAAAAAA/wAA/wAAAAAA/wD/AAD/AP//AAD//wAA/wD/AP////8A/wAA/wAA////AAD//////wD/AAD/AP8A//8A////AP8AAAAAAAAAAP//AAD//wAAAAAA//8AAP///wD/AP8AAAD///8A//8AAAD/AAD//wD/AAD/AAD///8A/wD//////////wD/AP//AAD/AP8AAP///wD//wAA////AAAA/wAAAAD//////wD/AAAAAP8A/wAA////AAAAAAAAAP8A////AP8AAAAAAP8AAP8AAAAA/wD/AAAA////////AAAAAAAAAAD/////////AP//AAAA//////////8AAP///////wD/AAAAAP//////AAAAAP8A//8AAP///wD/AP///wD/AP//AAD/AAAAAAAAAAAAAAAAAP8A/wAA//8A/wD//wAAAP////8A////AAAAAAAA/wD//wAA//////8A/wD/AP8A//8AAP8A/wAA/////wAA/wD//wAAAP////8AAAAAAAAA/wD/AAD/AP8AAP8AAP///wD///8AAAD/////AP8A/wAA/wAAAP8A/wAA/wAA/wAA/wAA//8AAAD/AAD///8A/wD/AAAA/wD/AP8AAAD/AAD///////8AAP8AAP//AP8AAP8A//8AAAAA/wD//wAAAAAAAAD//wD/////AAD/AAAAAAD/AP8AAAD/AP//////AP///wD/AP8A//8A/wAA/////wAAAAAA//8AAAD//////wAAAAAAAP8A////AAAAAAAAAP//AAAAAP8A/wAA/wD/AP8AAAAAAP8A////////AP//AP////////8A/wAAAAD/AP//AP///////wAAAP8A/wD/AP8A/wAAAP//AP//AAAA////AAD//wAA/wAAAAAA/wD/AAD///8A/wD/////AP8A//8AAP8AAAAAAP8AAAD/////AP///wD//wAA//8A//8AAP//AAAAAAAAAP//AP8AAAAAAAAAAP8A/wAAAAAA/wAA/wAA/wD/AAD/AAD//wD/AAAAAP///wD//wD///8A/wAAAP///wD/AAAA/////////wD//wD/AP//AP8AAP//AP8A////AP////8A//////8A//8AAP8AAAD//wD///////8A//8A//////8AAP8AAP///wAAAP8A////AAD//wD//wD//wAA/////wAA//////////8A/wAA/////wD///8A/wAAAAD/AP8AAAD/AAAAAP8AAAD/AAD///////8AAAAA////AAAA/////wD//wAAAAD/AP///////wD/AAAAAAD/AP//////AP8A////////AP8AAAAA/wAAAAAAAP////8AAP8AAAD/AP//AP//AAAA/wAA//8A/wAAAAAAAP8A//8A//8AAP////8AAAAAAAAA//8A//8A//8A//8A/wAAAAD/AP8A/wD///8AAAAA/wD/AAD//wAA/wD/AP8A/wD//////wAA//8A/wAAAP//AAD/AAAA//8AAP8AAP8A/wD/AP///wD/AAD///////8AAAD//wAA/wD///8A/wAA/wAAAAD//////wAAAAD/AP//AAAAAAD/AAD/AAAA//8A//8A/wD/AAAA/////wAAAAAA////AAAA/wAAAAAAAP//AP8AAP//AP8AAAAAAAAA/wD///8AAP8A//8A////AAD//wAA/wD/////AP///wD///8AAP8A/wAA/wD/AAD//wD/AP//AAAAAAAA/////wAAAP//AP8A//8A/wD//wAAAP//////AAD/AAAAAAD//wAAAP//AP8AAAAAAAD/AAAA////AAAA//8AAP///wAA//8AAAAA/wAA/wAA//8AAAAA/wD/AAAAAP///////////////////wD/AAD/AP///wD/AAD/AAAA/wAA/wD/AP8AAP//AAAA////AP////8AAAAAAAAA/wD//wD/AP//AP///wAAAAAAAAAA////AAD/AAD/////AP///wAAAAD/AP///wD/AP8A////AAD//wAAAAD/AP///wAA/wD/AP8A/wAAAP///wD/AP////8A////////AAD//////wD///8A/wAAAP//AP8AAAAAAP8A/wD/AAD/AAAAAP8A/////wAA/wD//wAA/wD//wD/AAD/AP///wD//wAA/wAA/wAA/wAA//8A/////wAA/wD//wAA////AAD///////8A//8A//8A/wAAAP//////AP//AP8AAP8AAAAA////AAAAAAD/AP///wD/AAD///8AAP//AP//AAAA/wAA/wD/////AAD/AP///wD/AP8AAP//AP//AP8AAAD///8AAP8AAP//AAAA/wAAAP8AAAD//wAAAAAA/wD//////wAA/wD/AAD/AP8AAP8AAP///wD/AP8AAP8AAP8A//8AAAAA/wAAAP8AAAAA/wAAAP///wAA////AAAA/wD/AP//AAD/AAD/AP///wD///8A//////8AAP///wD/AP8AAP8A/wD//wD/AAAAAP8AAP////////8AAP8AAP8A/wAAAAD/AAD/AP//AAD//wAA//8AAAD/AP//AP//AP////8A//8AAP///wAA/wAA/wD/////////////AAD//////wAAAAAA/////wAAAAD//////wAA/wD/AAAAAP8AAAD/AP8A/wD//wD/AP8AAP////8AAAD//wAA////////AAAAAAD//wAAAAD/AAAAAP8A/wD//wAA/wAAAAAAAAD//wAAAP8A//8A//8A/wD//wAA/wD/AP///wAA/wAA/////////wD/AP8A/wAAAAAA/wAA/wAA/wAA//8AAP8A/wD/AP8A////AAD/AAAA/wD/AP8A////AP//////AP//AAD//wAA////////AP8A////AAAAAP//AAAAAP8A/wD/AP///wD/AP///wD/AP///////////////wD/AP8A////AAAA/wD/AAD//////wD//wAAAAD//wAAAAD//wD//wAAAAAAAP///wD/AAAA//8AAAD/AP///wAA//8AAAAAAAAAAP8A/wAA/wAAAAD/AAD//wD/AAAAAAD/AP8A/wAA/wAA////AAAAAAD/////AP////8AAAAA/wAAAP8AAAAAAP8A//8AAP8A////AP//AP//AAAA/////////wAA/wAA////AP////8AAP//AP8AAAD//wAAAAAAAAD//wAA//8A/wAA/wAA/wD/AP//AP8AAAAA//8A/wD/AP8A/wD//wAAAAAA/wAAAP8A/////wD/AP8A/wAA/wD///////8A/wAA/wAA////////AP8AAP8AAP////8AAAAA/wD/////AAAAAP8AAP8AAP//////AP//////AP8AAP//AAAA/wD//wD/AP///wAA////AP///wAA//////8AAAD/AAAAAP///wAA////AP//AAAA////AAAAAAD/AAAA/wD//wAAAP8AAAAA/wD/AAD/AAAA/wAAAAAAAAD///////////8AAP8A/////wD//wAAAP8AAP8A//8A//8AAP///wAAAAAA//8AAAAAAAD//wAAAAD/AP//AP8AAP8A/wAA////AAAAAAAA//8AAP8A/wD//wD/AP//AP8A/wAAAP8A/////wAA/wAAAP8A/wD///8A/wAA/wAA////AAAA//8AAAD//wAAAAAA////////AP8A//8A//8A/wD/AP8AAP//AP//AAAA//8AAAD/AP//AAAA//8A////AP8A/wAAAAAAAP8A//8AAP//AAAAAP//AAD/AP//AAD/////////AP8A//8AAAAA////AAAAAAAA/wAAAP8A//8AAP//AAD/AAD/AP8AAP///wAAAP//AP////8A/wAAAAAAAAD/AAD/AP//////AP8A/wAAAAAAAAAA/wAAAAD//wAAAP8A//8A/wAA//8AAAD/AP///wD/AAD/////AP8A/wD///8A////////AP//AAAAAAD/AAD/AAAAAAD/////AAD//wD/////AAAA////AP8AAAAA//8A/wAA/wD/AAAA/wD/AAD//////wD///8A/wAA//8A/wAA/wD///8A/wD///8AAAAAAP8A////AP////8AAAAA////AAAAAAAA//8AAAD/AP////8AAAAAAAAA/wD/////AP8A//8AAP8AAP//AAD//wD//wAAAP8AAAD/AP//AP///wAAAAD/AP///wAAAAAAAP//AP//AP8A/wD/AAAAAAD/AP///wAAAP8AAP//AAD/AAD//////wD/AP///wD/AAD//wAA//8A/wD/AAD//wD/AAD/AP//////AAD//wAAAAAAAP8AAP//AAD//wAAAP////8A/wAA//8A////AAAA//8A/wD//wD/AP8A/wAA////AP8A/wAA//8AAP8AAAD/AP//////AP8A/wAA/wD//wD//wD/AP8AAP8AAAAA/wAAAAAA/wAA//8A//8AAAD/AP//////AP8AAP//AP//////AP8A//8A////AAD/////AAAAAAD//wAAAP8AAP///wAAAP8A//8A//8A/////wD/AP8AAAAA/wD/AP8A////AP//AP8A//8A/wAAAP//AAD//////wD/AP8A//8A//8AAAD//////wAA//8AAP8A/wD//wAA/wAA/wAAAAAAAP///wAAAAAAAP//AAD///8A//8A/wAAAAAA/wAA//8A//8AAAD/AAAA/wD/AAAA/////////wD//wAAAP//AP//AAAA/wD///8AAAAA/////wD/////AP//AAD/AP8A////AAD//wAAAP8AAAAA/wD///8A/wD///8A////AP8A//8A/wAAAAAA//8AAAD//wD/AAD/AAD///8A/////wAA////////AP///wD//wD//wAA//8A//8AAAD//////////wD/AP///wD/AP8A/////////wAA//8A//////8AAAD//wD///////8AAP///wAA/wAA/////wAAAP//AAD/AP8AAP//AP//////AP//////AP//AAD///8A////////AP8A/wAA//8A//8A/wAAAAAA/wD/AAAAAP8AAP8A//8A//////8AAP8A/wAAAP////8A//8A////////////AAD//wAA//8A//8A/wAAAP8AAAAA////AP8A/wD//wAAAAD/////AAD/AAD///8AAP8AAAAAAP8A/wD/AP8AAP8AAAD/AP///wAA////////////AAAAAAD/AAD/AAD///////////8A////////////AP//AAD/AAAA/wD/AAD/AAD//wD//////wD/AAD/AP////////8AAAD//wD/AP///wAAAP//AP8AAP8A////AP8A//8AAAAAAP///wAA/wAA/wAA/wD/AP//////AP//////AP//////AAD//wD/AAD/AAD/////AP//AP//AP8A/wD/AAD//wAA/wD//wD///8A//////8AAAD///////8AAP///wAAAP////8A/wAA//8AAP//AAAA////AP8A/wAAAP///wAA////AP8A/////wAAAAAAAAD//////wAA//8AAAAAAP8AAP8AAP8A//8A////AP///wAA/wAAAP8AAAD/AAAAAAD/AP//AAAA/////wD///////////8AAAAAAAD///8AAP//AP////8AAAD//wD//wD/AP///wD//////wD//wAAAP//////AAD//wD/AAD//wAAAP8A////////AP8A////AAAA/wAA////AAD//wAA//////8A//8AAAAAAP8A/////////////wAA//8A/wAA/wAAAAD///8AAP//AP///wAAAAAAAAD//wAAAP8A/wD/AAD/AAD//wAA//////8A/wAAAAAA/wAAAP//////AAAA/wD/AAAA////AP///wD//////wAA//8AAP8A/wAAAP8AAP8A/wD//wAAAAD///8A//////8A/wD/AP8AAAD/AAD/AAAAAP8A////AP8A////AP///////wD/AAAA////////AAAA////AAAAAP8AAAD//wD/AAD//wAA////AP///wAAAP///wD//wAAAP//AP8A/wD/AP8AAAAAAAAAAAD///8AAAD/AP8AAP///wAA/wD/AAAA/wD/AAD/AAD/AAAA//////8AAAD/AP8A/wAAAAD/AP8A//////8AAAD//wD/AAD/AP///wAA/wD/AP8AAP///wAA//8A/wD/AP8AAAD/AAAAAP//AAD//wD//wD/AAAA/wD/AP///////wD//wD///////8AAP///wAA/wAA/wD/AP////8A/wD/AP8AAAAA/wD/AP8A/wAAAP8A////AAD/////AP////////8A//8A/wAA//8A//8AAP///wD/AP////8AAAD/AP///wD//wD//wD/AAAAAP//AP//AP8AAP///wD///8AAP//AAAA/wD/AP////8AAP8A/wAAAP////8AAP8AAAD//wAA/wD//wD/AP8AAP8A//////8A/wD//wD/AAD///8A////AAAAAP//AP///wD/AAAA////AAAAAP//AP//AP8AAAD//wAA/wD/AP8A/wAA//8A/wAAAAAA//8A/wAA/wAAAAAA/wD//wD/AP///wD/AAD///8A/wAA/////wAA/////wAAAP////8A//8AAAAAAP///wAAAAAA/wAA/wAA/wD///8AAP8AAAAAAP8A//8AAAD/AP8AAAD/AAD//////////////////wAA/wD//wAAAAAAAP///wD//wD//wD/AAAAAP8A/wAAAAAAAAAAAAD///8A/wD/AAD/AAD/AAAA/wD/AP//////AP//AP8A////////AP///wAA/wD///////8AAAD///8A/wD/AP////8AAAD/AAAA/////wAAAAD//wD/////////AAD///8A//////////8AAP8A////AAAA////AP///wD///8A/wD///8A/wAAAP//AAD/AP//AP8AAAAA/wAAAAAA//8A////AAD/AP8A//8A/////////////////////wD/AP8A/wAA//8AAAD/AAD///8AAAAAAP8A/wAAAAD/AAAA/wD//////wD//wD///8AAAAAAAAA//8AAAD/AAD/AAD/AAD/AAAA/wD/AAD/AP//AAD//wD//wD//wD//wAAAP8AAP//AAD/AAD//wD/AAD/AP8A/wAAAAD//wD/////AP//AP//AP//AP//AP////8AAAD/AP8AAAAAAP//AP8A////AP////8AAP8AAP///wAA/wD/AAAA//8AAAAA/wD///8A//8A//8A//8A//////8AAP8AAP//AAD///8AAAAA/////wD/AAAA//8AAAAAAP8AAAAAAAD///8AAP8A////AP//////AP////////8A/////wD///8A////AAAAAAD/AP///////wD/////AAD/////AAD//wD/AAAAAP8A/wAAAAAAAP//AP//AAD//wAA/wD//wAA////AP///////wD//wAA/wAAAP8AAP///wAAAAAA/wAA//////8AAP8A/wAA//8A////AP8A/wAAAAAA////AP8A/wAA/////wAA//////8AAP///wD/AP//AP8A//////8A/wAA//8A/wAA////AP8A//8A//8A//8AAP////////8AAP8A/wAAAP8A/wAAAP8A//8A/////wD//wAA//8A//8AAAD///8AAP8A//8A//////////////8A//////////8A//8A/wAAAP8A/wAAAAAA//////////8A/wAAAP8A//8A////AAD/AAAA////////AP//AP8AAP8A////AAAAAAD/////AAD/AP8A//8A/wD//wAAAAAA/wAA/wD/AP///wAA////AP//AP//////AP8A/wD//wAAAP8A////AP8A//8AAP8A/wD/AAAA//8AAAD/////AP////8AAAAA//8A/wD//wD/AAD/AP///wD//wAA//8AAAAAAP8AAP8AAP//AP///wAA//8A//8A/wD/AP8A/wD///8AAP//AAD//wAA//8AAP8A//8AAAD//////wD//wAA/wD/////////AP//AP8A/wAAAAD//wD/AAD/AP//AAD/AP8AAAD/AP////8A/////wD///8AAP//AAD/////AAAA/wD///8AAAD//wD///8AAAAA/wAAAP//AP//AAAAAP//AAAA//8AAAAA//8AAP8A/////wAAAAAA//8AAP8A//8A/wAA//8A/wD/AP8A/wD//wAA/wAA/////////////wD///8A/wAA/wD/AAAAAAAAAAAAAAD//wD/AP//AAAA/wD/AAAA/wD//wAAAP//AAAAAP////8A/wAAAP//AAD//wAAAAAAAP//AP8A/wAAAP8A/wD///////8AAP8A//8AAP8A/wAAAP8A////AP8AAP//AP8AAP//AAAA////////AP////8A////AP//AP////8A/wAAAP//AP//AAAAAAAA/wAAAP//AAD/AP//AP8AAP///wAA//8A//8A/wAA//8A////AP//AP8AAAAA/wAAAAD/AP8AAP8A//////8AAAAA//8A/////wAAAP///wD/AP////8AAAAA////AP8AAP8AAP////8AAP//AAD//wD///8AAAAA//8A/wAA//8AAP8A/wD///8A/wAA/wD//wD///8A//8A/wD/AP//AAAAAAAA/wAAAAAA//////8A//8AAP8A//8A////AP8AAP8A//////8A/wAAAP8A/wAA/wD/AAD//wD/AAD/AAAAAAAAAAD///8AAP8A//8AAAAA//8AAAD/AAAA/wD///8AAAD///8A/wAA/wAAAAAA/wAAAP///wD//wAAAAD/AAD/AP8AAAD//wAAAAAA////AP//AP8A/wD//wAAAP///wD//wAA////AP8A/wAAAP8A/wAAAAAA////AAD/AP//AP8AAP///////wD/AAD/AAAAAAAAAP8AAAD/AP8A//8A//////8A////AAD///8AAAD/AP///////wAAAAD/AP//AAAAAAAA/wD/AAD/////AAD/AAAAAAD/AP8AAP8A//8A/wD//wD//wAAAP//AAD///8A////AAAA/wD//////wD/AP//AAD/AAAA/wAA/wD/AAD/AP////////8AAAD/AP8AAP8AAP//AAAA//8A/wD///8A////AAAAAP///wAA//8AAP8AAAAA/////////wAA/wAA////AAD/AP////8AAAAAAAD/AP//AP//AP///////wD//wAAAP//////AAD/AP////8A////AAAAAAAA/wAA/wD/AP////8AAP//////AP8A/wD/AAAA//8A/wAA/wAAAAD/AAD//wD/AP//AAAAAP//AAAA/wAA/////wD/AP8A/wAAAAAAAP8AAAD/////AP8AAAAAAP8A//8A/wD/AP8A/wAAAAD/AP//AP//AP///wAA/wAA////AAD/////AP8A//8A/wAA/wD/AAAAAP8AAAAAAAD///8A////AP8AAP//AAD/AP8AAAAAAP8AAAAA/wAA//8A//8AAAD/AAAA//////8A////AP///wD/AAAAAAD/AAD//wD///////8AAAAAAAAAAAD/AP8A//8AAAAA/wAA////AAAA/wD/AP8A/wD/AAD/AP//AP////8AAP8A/wAAAP8AAP///wD/AP8AAP//AAAAAAD//wAAAAD//wD/AP8AAP//AAAAAAD/AAD//wAAAP//////////AAAA/wD/AP//AP8A//8A//////8AAAAAAAAAAP//AP////8A//8AAAAAAP//AP8AAAAAAAAA//////8AAP//AP8A/wAA/wD/////////AP8AAP8A/wD/AP8AAAD//wD/AAD/AP///wAAAP8AAP8A//8AAP///wD///8AAAAA/wD//wAAAAAA////AAD///8AAP8A/wD/////////AAAAAAD/AP8AAP//AP8A/////wAAAAD/AP//AAAA//8AAAD///8A/wD//wAAAP8A/wAAAP//AP///wD/AAD//wAA/wD/AAD///8AAP8AAAD/AP//AAAAAAD//wD/AAAAAP//AP//////AAAA/wD//wD/AAAA/////wAA////AAAA//8AAP8AAAAA////AAD//wAA//8A////AAAAAAD/AP8AAP8AAAD//wD/AP8AAP8A/////wAA//8A//8A/wD/AAAA/////////wAA/wAA/wAA//8AAP////8A/wAA//////////8AAAD/AP8A/wD/AAAA/wD/////AAAAAP8AAP///wD///8A/wD//wAA//8A////AAAA/wD/AAD//wD/AP//AAAAAAD/AAD//wD/AP//AP//AP///wD/////AP8AAP8AAP//AAAA/wD//////////wAA//8A//8A/wD/AAAAAAD//////wD//wAA////AP//AP8A/wAAAP//////AAD///8A////////AP///wD/AP////8A/wAAAAD/AAD//wAAAAAA/wAAAAAA////AAAAAAD/AAD//////wAAAP///wAA/wAA/wD//////wD/////AP////8A/wAA/wD/AAD//wAA//8A/wAAAAD/AP//AP8A/wAA//8AAAAAAP8AAAD/AAD//wD/AP8A/wAAAAAA/wD//wD///8AAAAA/wD//wAAAP8AAAAAAAAA/wAA/wAAAP////8A/////wAA//8AAAD/AP8A/wD/AAAA/wAAAP8AAAD///8A/wD/AP8A/wAA/wD//wD//wD/AAAA/wAAAAD//wD/AAAAAAD/AAAAAP//AAAA//////8A/wD///8A/wAA//8AAAD/AP8A/wAA//8AAP8A//8A//8A/wAA/wAA////AAD/AAD/AP//AAD/////AP8A/wAAAP8AAP////8A/wAAAP8A/wD/AAD/AP///wD///////8A/wAAAAAAAP///wD/AAD//wD/AP8AAAD/AAD//wD//wAAAAD//wD/AAAAAP////8AAAAAAAAA////AP///wAAAP//AAD/AP//AP//AAD/////AAAA//8AAAAA/wD///8AAAAA//8AAP8A//8A//8AAP8A//8A/wD//wD/AP//////AAAAAP///wAAAP8AAAAA/wD//wD//wD//wAA//////8AAAD//wD///8A/wAA/////////wD//////wAAAP//AP//AP8AAAD//wAAAP8AAAD/AP//AP8AAAAA////AP8AAAAAAAD/AP///wD/AP8AAAAAAAD/AAAAAP8AAP//AP//AAAAAP//AP8A/wD//////wAAAP8AAP////8AAAD/AAD/////////AAD//wD/AP8AAAD//wD//wD///8A//8A/wD///8AAP//AAD/AAAAAAAA/wAA////AP//////AAAAAAAAAP///wD//////wAAAAAA/wD/AAD/AP//AP8AAAAAAAAAAAD//wAAAP8AAAD/AP8AAP////8A/wAA//8AAAD/AP8AAAAA//8AAAAAAAAA/wAA/////wD//wD/AP8A/wAAAP8A/////wAAAAD/AP////8A/wD///8AAAAAAAAA//8AAP8A//8A//8AAP8AAAAA/wD/AAD//wD/AAD/AAAA/////wD/AP8AAAD//wAAAAD//wAA/wAAAAAAAP8A//8AAAD/AAAA/wAAAP////8AAAD//////wD/////AP8A/wD///8AAAD//wAAAP8AAAAAAAD/AP8AAP8A/wD/AAAA/////wAAAP8A////AP//AAD/AAD/AAAA/wD//wAAAAD/AP////8A/wD/AAD/AAD/AP8A/wAAAAAAAP////8AAP8AAP8A/////wAAAAD///8A/wAA/wAAAP8AAAD///8AAAAAAP///wAA/wD///8AAAD/AAAAAAAA/wD/AAD//////////wD/AAD/AAD///////8AAP8AAAAA////AAAA//8A/wD/////AAD//wAA/wAAAAAAAP8A//8AAP//////AP////////8A/wAAAP8A/wAA/wAAAP8AAP8A//8A/////////wAA//8AAAAAAAD/AP8AAAAAAP//AP//AAD//wAAAAD//wAA/////wD/AAD//////wD/AAD/AP8A////AAAA//8AAP8AAP//AP///wD/AAAAAP//AAAAAP8AAAAA//8AAAAA/////////wD/AAD/AAAAAP8AAAAA/////wD/AAAA////AP8AAAD/////////AAD//wAAAP8A//8A/wD/AP8A/wD/AP8A/wD/////AAAA/wD///8A//8AAAAA/wD/AAAAAAAA/wD/AP///////wD/AP8A/wAA/wAAAAAA/wD/AP///////wAAAP8AAP8A/wAAAP8A/wAAAAAAAAD/AAAA/wAAAP8A/////wAA/wAA////////AAD//wD///8AAP8AAP//////AAD/////AP///wD//wAAAP//AAAAAAAA//8AAP8A//8A/wAA////AP//AP//AAD//wAA////AP8A//8A//8A/wD/AP//AP8AAAAA//8AAAD/AP8AAP8AAP8AAAD///8A/wAA/////wAA//8A//8AAP//AAAA//8AAAAA////AAAAAAD//wD/AAD///8AAAD/AAD/AP///wD/AP////////8AAP8A/wD/AP8AAP8A////AP///wD//wD/AP8AAP//AAD/AAAAAP///wD//wAAAP//////AAD/AP8AAP8AAP///wAA//8A/wAAAP///////wAAAP///wAAAP8A//8AAAAAAP8A//////8A/wD//wAA//8AAP8A/wAA////AAAA//8AAP//AP////////////////8A/wAAAAD///8AAAD/////AAD/AAD/AP///////wAA//8A////AP8A/wD/AP8A//8AAAD//wAAAAAA/wD//wAA//////8AAAAA/wD/////AP8AAAD/AP8A/wD///8A/wD/AP//AAD/AP//AP8AAP///wAAAP8AAAD/AP//////AAD/////AP8AAP//AP8AAAAA//8A/wD//wAAAAD///////8AAP//AAD/AAAA/wD/AAD/AP8AAP8A/////////wAA/wD/AP8A/wAA//8A////AAD//wD///////8A/wAAAAAA//8A//8AAAD//wAAAAD/AP////8AAAD/AAAA/////wAAAP//AP////8A/wD///8A//////8AAP8AAAD//////wAA////AAD//wD///8AAP//AP8AAP//AAD/////AP///wAAAAAAAAAA////AAAA/////wAA/wAA/wAAAP8AAP///wAAAP8AAP8A/wAA/////wD//wD/AP///wD/AP//AAD//wAA/wD//wD/AP8A/////wAAAAAAAP8AAP8A/wAAAAAAAP////8A/wAA//8AAAAAAAD//wAA/////wAA////AAD///////8AAP8AAP////8AAP8AAP//AP8AAAD/AP////8A//8A//8A/wD//wAAAAAA//8A/////wD/AAAAAAAA////AP//AP8A/////wAA/wAAAP////8AAP///wAA////AAAAAP////8A/wD///8AAAD/AP8AAP//AAAA////AP//AAAAAP8AAAAAAAAA/wAA/wAA/wD/AP8A/wAAAAD/AAD/AP////8AAAD//wAA//8A//8A/wAAAAAAAAD/AP//////AAD/AAAAAP//AAD/////AAAAAP///////wAA/wD/AP8AAAD/AAD/////AP8A/wD//wAA/wD//////wAAAP///wAA/wD/AP8AAP//AP///wD/AAAAAP////////8AAP8A/wAAAAD//////wAA//8A/wD//wAAAP///wD///8A/wD/////AP8AAAD///8AAP////8A//8AAAAA//8AAP8AAAAA/wD/AP//AAD/AP8AAP///wD///8AAP8AAP//AP////8AAP8A//8A/wAAAP//AP8A/wD//wAA/wAAAP///wAA/wAA/wD/AAD//////wD/AP//////AAAA/wAA//8AAP8A/wD/AAAAAP8AAAAAAP8A/wAA/wD/AAD//wD//wAA/wD/AP8AAAD/AP///wAA/////wAA//8AAP8A/wAAAAAAAAAAAAD//wD//wD/AAD///8AAAD///8A////AAD/AAAAAAD/AAAAAAAA/wAAAP8AAAAA//8AAP8A/wD//wD/AAAA/wAAAAD/AAD/////AAD/AP8AAAAA//8AAAD///8A/wAA/wD//wD/AAD/AP///wD///8A//8A//////8A/wD/AP////8AAAD///8A/wD//wD/AAD/AA==</EventValues>
+  <LoadableData>
+    <IAddInData>
+      <IAddIn name="Frequency spectrum">
+        <LockSliders>True</LockSliders>
+        <LastStartChannel>0</LastStartChannel>
+        <LastStartBand>0</LastStartBand>
+        <Bands>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.44">3</Band>
+          <Band responseLevel="0.44">4</Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+          <Band responseLevel="0.92">
+          </Band>
+        </Bands>
+        <Scale>9.5</Scale>
+      </IAddIn>
+    </IAddInData>
+  </LoadableData>
+  <EngineType>Standard</EngineType>
+  <Extensions>
+    <Extension type=".vix" />
+  </Extensions>
+  <WindowSize>1612,1126</WindowSize>
+  <ChannelWidth>507</ChannelWidth>
+</Program>

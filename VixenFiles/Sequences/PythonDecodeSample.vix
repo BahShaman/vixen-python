@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Time>5000</Time>
+  <EventPeriodInMilliseconds>100</EventPeriodInMilliseconds>
+  <MinimumLevel>0</MinimumLevel>
+  <MaximumLevel>255</MaximumLevel>
+  <AudioDevice>-1</AudioDevice>
+  <AudioVolume>0</AudioVolume>
+  <Channels>
+    <Channel color="-1" output="0" id="635468117325079398" enabled="True">Channel 1</Channel>
+    <Channel color="-1" output="1" id="635468117325089403" enabled="True">Channel 2</Channel>
+    <Channel color="-1" output="2" id="635468117325099407" enabled="True">Channel 3</Channel>
+    <Channel color="-1" output="3" id="635468117325449502" enabled="True">Channel 4</Channel>
+    <Channel color="-1" output="4" id="635468117325459512" enabled="True">Channel 5</Channel>
+    <Channel color="-1" output="5" id="635468117325469512" enabled="True">Channel 6</Channel>
+  </Channels>
+  <PlugInData />
+  <SortOrders lastSort="-1" />
+  <EventValues>/wAAAAAAAAAAAP8AAAAAAP8A/wD/AP8AAAAZM0xmf5myzOX//+fQuaKLc1xFLhcAAAAA/wAAAAAAAAD/AP8AAAAA/wD/AP8A/wAAABkzTGZ/mbLM5f//59C5ootzXEUuFwAAAAAA/wAAAAAA/wAAAP8AAAD/AP8A/wD/AAAAGTNMZn+Zsszl///n0Lmii3NcRS4XAAAAAAAA/wAAAP8AAAAAAP8AAP8A/wAA/wD/AAAZM0xmf5myzOX//+fQuaKLc1xFLhcAAAAAAAAA/wD/AAAAAAAAAP8A/wD/AAD/AP8AABkzTGZ/mbLM5f//59C5ootzXEUuFwAAAAAAAAAA/wAAAAAAAAAAAP8AAP8AAP8A/wAAGTNMZn+Zsszl///n0Lmii3NcRS4XAAAA</EventValues>
+  <LoadableData />
+  <EngineType>Standard</EngineType>
+  <Extensions>
+    <Extension type=".vix" />
+  </Extensions>
+</Program>
