@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="drawing.svg"
+   sodipodi:docname="drawing-v1.svg"
    inkscape:export-filename="C:\Documents and Settings\C00364\My Documents\Projects\ArduinoChristmas2013\drawing-wiring.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -467,10 +467,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49662672"
-     inkscape:cx="593.19503"
-     inkscape:cy="1536.9419"
+     inkscape:cx="361.63278"
+     inkscape:cy="1759.7315"
      inkscape:document-units="in"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer11"
      showgrid="false"
      units="in"
      inkscape:window-width="1536"
@@ -2404,7 +2404,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Covers"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <rect
        y="498.63721"
