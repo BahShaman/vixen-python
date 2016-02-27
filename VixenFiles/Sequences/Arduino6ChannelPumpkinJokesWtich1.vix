@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Program>
+  <Time>6618</Time>
+  <EventPeriodInMilliseconds>100</EventPeriodInMilliseconds>
+  <MinimumLevel>0</MinimumLevel>
+  <MaximumLevel>255</MaximumLevel>
+  <AudioDevice>-1</AudioDevice>
+  <AudioVolume>0</AudioVolume>
+  <Channels />
+  <PlugInData>
+    <PlugIn name="Generic serial" key="34090287" id="0" enabled="True" from="1" to="6">
+      <Name>COM4</Name>
+      <Baud>38400</Baud>
+      <Parity>None</Parity>
+      <Data>8</Data>
+      <Stop>One</Stop>
+      <Header checked="False" />
+      <Footer checked="False" />
+    </PlugIn>
+  </PlugInData>
+  <SortOrders lastSort="-1" />
+  <Profile>BosciaVixenArduino</Profile>
+  <Audio filename="WhichWitchIsWhich.wav" duration="6618">WhichWitchIsWhich.wav</Audio>
+  <EventValues>Rn6f6arWoJiPKu9/gvF5pToAAAAAAAAAAAAAADvIu9UJ798xVf6Hs7BrX3fdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4ZFSEdKBEADRoQHyYbGSoADCoNAC0kJgwkKQ4SJicmFBAAJRUQABwAECwrCioOJBEaGg4MKA0XGBoRFiQpISIADA0kIhQAGhMqIRQoLRkQJBEOCxkAEh8oABctFhgRGBUOKQ8QJycAFykNJwwVJhEtFCUAHwwAKhweLQoVDRIqFwAdJiYSJBIcGQATEyAeGRgNACgAABUjDQ4fEh4NEgAXAAwfABwPACkAJQ4LAAsiABUcDhcWFBQmKh0YGQoRJS0YHAAnDxwiKhoMEiQiLCENAC0jCgsAGSIUHykbKQAKHycZGCUqGRQAEhsfKiILEikcABEiGxQKKiwAGRAKJSYpECMNDCMXDAAZISALACYOCxAPIRYADAALFA0XDxAaIispEwAZIwAtFREiDxISLQ4WACgNJycrHxgQAAAVGxIjISkeCiQAIScNIh8qKw0i</EventValues>
+  <LoadableData>
+    <IAddInData>
+      <IAddIn name="Waveform" />
+    </IAddInData>
+  </LoadableData>
+  <EngineType>Standard</EngineType>
+  <Extensions>
+    <Extension type=".vix" />
+  </Extensions>
+  <WindowSize>1612,1126</WindowSize>
+  <ChannelWidth>300</ChannelWidth>
+</Program>
