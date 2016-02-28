@@ -29,9 +29,10 @@ class VixenBaseTest(unittest.TestCase):
         print ord(self.vixen.sequence[0][0])
         self.assertEqual(ord(self.vixen.sequence[0][0]),0,'sequence does not match')
         
+    #@unittest.skip("still need to test exceptions") 
     def test_ProcessDataIncorrectly(self):
         datastr = "ASDFASEASDFASFEEE"
-        self.assertRaises(ValueError,self.vixen.processdata,datastr,6)
+        self.assertRaises(BaseException,self.vixen.processdata,datastr,6)
 
     @unittest.skip("the order of this test with the next causes a broken test") 
     def test_GetPositionBeforePlay(self):
@@ -43,21 +44,52 @@ class VixenBaseTest(unittest.TestCase):
     @unittest.skip("the order of this test with the previous causes a broken test") 
     def test_GetPositionZAfterPlay(self):
         self.vixen.play()
-        pos = self.vixen.pos_syncwait(1000)
+        pos = self.vixen.pos_syncwait(10,10)
         pos = self.vixen.get_pos()
         print "hello from after " + str(pos)
         print "hello2 from after " + str(pos)
         self.assertTrue(pos>0,'postition did not increase')
 
-    def test_TicksAtPer(self):
-        ticks = self.vixen.ticks_at_per(1)
+    def test_TicksAtPeriodTen(self):
+        ticks = self.vixen.ticks_at_per(10)
         print "ticks at per 1 "+str(ticks)
-        self.assertEqual(ticks,100,'ticks did not calculate correctly')  
+        self.assertEqual(ticks,1000,'ticks did not calculate correctly')  
 
     def test_valueAtPeriodOne(self):
         val = self.vixen.value(1,1)
         print "value at per 1 channel 1 "+str(val)
         self.assertEqual(val,0,'value not set correctly')
 
+    def test_valueAtPeriodOneHundred(self):
+        val = self.vixen.value(0,100)
+        print "value at per 100 channel 1 "+str(val)
+        self.assertEqual(val,140,'value not set correctly')
+
+    @unittest.skip("setting values does not work") 
+    def test_SetValueToOneHundred(self):
+        val = self.vixen.value(0,10)
+        print "value at per 10 channel 1 "+str(val)
+        self.vixen.set_value(1,10,3)
+        val = self.vixen.value(0,10)
+        print "value at per 10 channel 1 "+str(val)
+        self.assertEqual(val,3,'set value does not set correctly')
+    
+    def test_SetValueToChannelOutOfRange(self):
+        self.assertRaises(IndexError,self.vixen.set_value,self.vixen.channels+1,10,100)
+    
+    def test_NumberOfChannels(self):
+        self.assertEqual(self.vixen.channels,6,'number of channels does not equal 6')
+
+    def test_NumberOfValuesInArray(self):
+        self.assertEqual(self.vixen.periods,1967,'there are not all periods in periods')
+
+    def test_PeriodStr(self):
+        val = self.vixen.period_str(100)
+        self.assertEqual(val,'per: 100/1967: 140,000,000,000,000,000','period string format changed')
+        
+    def test_ProcessZeroChannels(self):
+        self.vixen.channels = 0
+        self.assertRaises(BaseException,self.vixen.processdata,self.datastr,0)
+
 if __name__ == '__main__':
-    unittest.main(verbosity=10)
+    unittest.main()
