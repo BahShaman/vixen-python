@@ -240,40 +240,4 @@ class Vixen(object):
 		
 """****************************************   TESTING   ****************************************"""
 if __name__ == "__main__":		
-		
-	test1 = Vixen()
-	vixfilename = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\Arduino6ChannelThisIsHolloweenMain.vix"
-	test1.loadfile(vixfilename)
-	print "test 2a ...",
-	if test1.periods == 0:
-		print "PASS"
-	else:
-		print "FAIL"
-	"""
-	test2 = Vixen()
-	musfile = 'C:/Users/BOSCIA/Documents/Projects/VixenDecode/03 - This Is Halloween.ogg'
-	test2.loadmusic(musfile)
-	#print test2.value(0,100)
-	#test2.play()
-	while True:
-		for per in range(vix.periods):
-			print vix.musicfilename
-			print vix.period(per)
-			vix.pos_syncwait(per)
-		else:
-			break;
-	print "test 2b ...",
-	print "PASS"
-	"""
-	""" testing XML File Parsing """
-	
-	test3 = Vixen()
-	rootdir = os.path.dirname(os.path.realpath(__file__))
-	SequencePath = os.path.join(rootdir,os.path.join("VixenFiles",os.path.join("Sequences","*.vix")))
-	SequencePath = "C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\Sequences\\"
-	print SequencePath
-	for file in os.listdir(SequencePath):
-		if(file[-3:]) == "vix":
-			print file,
-			test3.loadfile(os.path.join(SequencePath,file))
-			print test3.channels
+	print "all testing moved to unit-test directory"
