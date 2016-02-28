@@ -23,4 +23,7 @@ To install py serial
 
        test by opening python, try import serial
 
-
+to install unittest
+    download http://www.lfd.uci.edu/~gohlke/pythonlibs/
+    unittest2-1.0.1-py2.py3-none-any.whl
+    pip install .\unittest2-1.0.1-py2.py3-none-any.whl
