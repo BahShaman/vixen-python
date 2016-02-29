@@ -2,6 +2,8 @@
 import pygame
 import os
 import time
+import sys
+sys.path.append('../vixen')
 from vixen import Vixen
 from ArduinoSerial import ArduinoSerial
 
@@ -52,8 +54,8 @@ vixfilename = "Arduino6ChannelThisIsHolloweenMain.vix"
 '''
 
 vixfilename = "Arduino6ChannelThisIsHolloweenMain.vix"
-#vix.basedir('C:\\Users\\BOSCIA\\Portable\\Vixen 2.1.1.0\\')
-vix.basedir('/home/pi/Github/vixen-python/VixenFiles')
+vix.basedir('../VixenFiles')
+#vix.basedir('/home/pi/Github/vixen-python/VixenFiles')
 vix.loadfile(vixfilename)
 #vix.channels = 6
 vix.processdata(vix.event_values,vix.channels)
