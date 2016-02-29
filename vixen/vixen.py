@@ -218,7 +218,6 @@ class Vixen(object):
 		temp = list(self.sequence[channel])
 		temp[period] = chr(setval)
 		self.sequence[channel] = "".join(temp)
-		#self.sequence = seq
 	
 	def period_str(self,period):
 		ret = "per: " + str('{:d}'.format(period)) + "/" + str('{:d}'.format(self.periods)) + ": " + ",".join(['{:03d}'.format(ord(self.sequence[x][period])) for x in range(self.channels)])
