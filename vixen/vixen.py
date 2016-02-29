@@ -212,10 +212,21 @@ class Vixen(object):
 	def value(self,channel,period):
 		return ord(self.sequence[channel][period])
 		
-	def set_value(self,channel,period,val):
-		print self.sequence[channel][period] == chr(val),
-		print "setting", str(self.sequence[channel][period]), " to ", str(chr(val))
-		#self.sequence[channel][period] = self.sequence[channel][period]
+	def set_value(self,channel,period,setval):
+		#print self.value(channel,period)
+		#print ord(self.sequence[channel][period]) == self.value(channel,period),
+		#print "setting", ord(self.sequence[channel][period]), " to ", str(val)
+		#self.sequence[channel][period] = hex(val)
+		print type(self.sequence)
+		print type(self.sequence[channel])
+		print type(self.sequence[channel][period])
+		print len(self.sequence[channel]) 
+		#sequence is type list[str], a single value is the pos of char in str
+		#set the channel string to a list so we can manipulate, then change back to string with join.
+		temp = list(self.sequence[channel])
+		temp[period] = chr(setval)
+		self.sequence[channel] = "".join(temp)
+		#self.sequence = seq
 	
 	def period_str(self,period):
 		ret = "per: " + str('{:d}'.format(period)) + "/" + str('{:d}'.format(self.periods)) + ": " + ",".join(['{:03d}'.format(ord(self.sequence[x][period])) for x in range(self.channels)])
@@ -233,7 +244,7 @@ class Vixen(object):
 		if self.channels == 0:
 			raise BaseException("Channels = 0")
 		self.periods = len(self.data)/self.channels
-		print "%s channels, %s periods" % (str(self.channels),str(self.periods))
+		#print "%s channels, %s periods" % (str(self.channels),str(self.periods))
 		self.sequence = [ self.data[start:start+self.periods] for start in range(0, len(self.data), self.periods) ]
 		#print str(self.sequence[0][0])
 		#print "hello:" + str(hex(ord(self.sequence[0][0])))		

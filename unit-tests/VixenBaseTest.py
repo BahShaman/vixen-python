@@ -65,14 +65,20 @@ class VixenBaseTest(unittest.TestCase):
         print "value at per 100 channel 1 "+str(val)
         self.assertEqual(val,140,'value not set correctly')
 
-    @unittest.skip("setting values does not work") 
-    def test_SetValueToOneHundred(self):
-        val = self.vixen.value(0,10)
-        print "value at per 10 channel 1 "+str(val)
-        self.vixen.set_value(1,10,3)
-        val = self.vixen.value(0,10)
-        print "value at per 10 channel 1 "+str(val)
-        self.assertEqual(val,3,'set value does not set correctly')
+    #@unittest.skip("setting values does not work") 
+    def test_SetValueForAPoint(self):
+        ch = 0
+        per = 3
+        setval = 141
+        #print "sequence"
+        #print ord(self.vixen.sequence[ch][per])
+        val = self.vixen.value(ch,per)
+        self.assertNotEqual(val,setval,'values are the same before set')
+        #print "value at per "+ str(per) +" channel "+str(ch)+" "+str(val)
+        self.vixen.set_value(ch,per,setval)
+        val = self.vixen.value(ch,per)
+        #print "value at per "+str(per)+" channel "+str(ch)+" "+str(val)
+        self.assertEqual(val,setval,'set value does not set correctly')
     
     def test_SetValueToChannelOutOfRange(self):
         self.assertRaises(IndexError,self.vixen.set_value,self.vixen.channels+1,10,100)
