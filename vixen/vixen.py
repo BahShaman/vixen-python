@@ -213,14 +213,6 @@ class Vixen(object):
 		return ord(self.sequence[channel][period])
 		
 	def set_value(self,channel,period,setval):
-		#print self.value(channel,period)
-		#print ord(self.sequence[channel][period]) == self.value(channel,period),
-		#print "setting", ord(self.sequence[channel][period]), " to ", str(val)
-		#self.sequence[channel][period] = hex(val)
-		print type(self.sequence)
-		print type(self.sequence[channel])
-		print type(self.sequence[channel][period])
-		print len(self.sequence[channel]) 
 		#sequence is type list[str], a single value is the pos of char in str
 		#set the channel string to a list so we can manipulate, then change back to string with join.
 		temp = list(self.sequence[channel])
