@@ -13,6 +13,7 @@ class Vixen(object):
 	defaultseqdir = 'Sequences/'
 	defaultmusdir = 'Audio/'
 	defaultprodir = 'Profiles/'
+	defaultpgrdir = 'Programs/'
 	vixfilename = ''
 	musicfilename = ''
 	channels = 1
@@ -134,28 +135,33 @@ class Vixen(object):
 					#print PlugInData.find('Stop').text	
 
 	def loadvixprogram(self,vixprogramname):
+		files = []
+		print 'boscia was here'
 		if self.basedirpath != '':
 			print "Using base dir path %s" % self.basedirpath
-			checkfilepath = self.basedirpath + '/' + self.defaultprodir + vixprogramname
+			checkfilepath = self.basedirpath + '/' + self.defaultpgrdir + vixprogramname
 		else:
 			print 'base file path not set'
 			checkfilepath = vixprogramname
-		print "loading profile file %s" % checkfilepath
+		print "loading Vix Program file %s" % checkfilepath
 		if not os.path.exists(checkfilepath):
-			print ("Profile file '%s' not found" % checkfilepath)
+			print ("Vix Program file '%s' not found" % checkfilepath)
 		else:
 			tree = ET.parse(checkfilepath)
 			root = tree.getroot()
-			print root.tag
-			sequences = int(len(root.find('Sequence')))
-			print sequences
+			print ("Root tag is '%s'" % root.tag)
+			sequences = int(len(root.findall('Sequence')))   
+			print ("Found %s Sequences" % sequences)
 			if sequences > 0:
-				print "setting channels from profile"
+				for sequence_item in root.findall('Sequence'):
+					print sequence_item.text
+					files.append(sequence_item.text)
 			if root.find('Profile') is not None:
 				tempprofilename = root.find('Profile').text
 				print "attempting to load profile"
 				self.loadvixprofile(tempprofilename)
-					
+		if files:
+			return files
 	def basedir(self,dirname):
 		self.basedirpath = dirname
 		if not os.path.exists(self.basedirpath):
