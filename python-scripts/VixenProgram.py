@@ -16,6 +16,7 @@ files = [
 
 '''TODO: why issues with index'''
 '''TODO: prevent multiple instances'''
+done = False
 for file in files:
 	vixfilename = file
 	print 
@@ -29,7 +30,6 @@ for file in files:
 	vix.processdata(vix.event_values,vix.channels)
 	vix.set_screen((200,200))
 	vix.play()
-	done = False
 	per = 0
 	while not done:
 		if per >= vix.periods - 3:
@@ -39,6 +39,7 @@ for file in files:
 		#print vix.periods, per
 		ard.send(vix.period_arr(per))
 		print vix.period_str(per)
+		#pygame.display.flip()
 		#if per % 100 == 0:
 			#print '.', 
 	ard.send([0,0,0,0,0,0])
